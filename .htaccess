@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Réécriture API V1
+RewriteRule ^v1/?$ /v1/index.php
+RewriteRule ^v1/main\.php$ /v1/index.php
+
+# Réécriture API V2
+RewriteRule ^v2/?$ /v1/index.php
+RewriteRule ^v2/main\.php$ /v1/index.php
+RewriteRule ^v2/([1-9]*)$ /v1/index.php?id=$1
+# TODO : Réécriture API V2
+
+# Réécriture API Auth
+RewriteRule ^auth/?$ /authAPI/authapi.php
+RewriteRule ^auth/main\.php$ /authAPI/authapi.php
+RewriteRule ^auth/index\.php$ /authAPI/authapi.php
+RewriteRule ^auth/authapi$ /authAPI/authapi.php

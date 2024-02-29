@@ -1,6 +1,4 @@
 <?php
-
-
 class FactsDAO
 {
     public static function readChuckFact($linkPDO, $id): string

@@ -5,9 +5,9 @@
     {
         if (!isset($co)) {
             $host = "localhost";
-            $db_name = "chuckn_facts";
+            $db_name = "R4.01-api";
             $username = "client_chuck_api";
-            $password = "0Jln*zBt@BG])!hO";
+            $password = "a37ZNMCjE5nrb*T!";
             try {
                 $co = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
                 $co->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
